@@ -11,7 +11,7 @@ if (location.href.includes("playlist")) {
         window.open("https://projectlounge.pw/ytdl/download?url=" + j, "_blank");
     })
 
-} else if (location.href.includes("channel)) {
+} else if (location.href.includes("channel")) {
     if (window.confirm("download entire channel?")) {
         Array.from(list).forEach(j => {
             if (j.href.includes("/watch?v=") && !j.href.includes("listen")) window.open("https://projectlounge.pw/ytdl/download?url=" + j);
